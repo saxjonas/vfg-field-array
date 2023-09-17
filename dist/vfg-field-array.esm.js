@@ -7648,6 +7648,7 @@ var FieldArray = { render: function render() {
       value.push(itemsDefaultValue);
 
       this.value = [].concat(_toConsumableArray(value));
+      this.$forceUpdate();
     },
     removeElement: function removeElement(index) {
       this.value.splice(index, 1);

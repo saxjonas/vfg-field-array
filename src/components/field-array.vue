@@ -210,6 +210,7 @@
         value.push(itemsDefaultValue);
 
         this.value = [...value];
+        this.$forceUpdate();
       },
       removeElement(index) {
         this.value.splice(index, 1);
